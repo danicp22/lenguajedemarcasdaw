@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <title>Daniel Calve Pardo</title>
+    <title>Jose Vicente Carratala</title>
     <meta charset="utf-8">
     <!-- Etiquetas de posicionamiento -->
     <meta name="description" content="Web de Jose Vicente Carratala, Formador, programador y diseñador">
@@ -14,12 +14,59 @@
      <meta property="og:image" content="josevicenteicono.jpg">
      <meta property="og:url" content="https://jocarsa.com">
      <meta property="og:type" content="website">
-     <link rel="stylesheet" href="005-estilo.css">
+     <style>
+        /* https://static.jocarsa.com/fuentes/ubuntu-font-family-0.83/Ubuntu-R.ttf */
+        /*
+          ttf = TrueTypeFont = Antiguo
+          otf = OpenTypeFont = Nuevo
+          woff = En desuso
+        */
+        @font-face {
+          font-family: "ubuntu";
+          src:url("Ubuntu-R.ttf");
+        }
+        h1,h2,h3{
+          color:indigo;
+        }
+        body{
+          background:GhostWhite;
+          font-family:ubuntu;
+        }
+        header,main,footer{
+          width:600px; /* Establece la anchura de los elementos */
+          background:white; /* Establece el fondo de los elementos */
+          margin:auto; /* Centralo en pantalla */
+          padding:20px; /* Pon un poco de margen interior */
+        }
+        nav ul{
+          list-style-type:none; /* Anula estilos de lista */
+          margin:0px; /* anula el margen exterior por defecto */
+          padding:0px; /* anula el margen interior por defecto */
+          display:flex; /* Activa flex de izquierda a derecha */
+          gap:1px; /* Distancia entre los elementos flexbox o grid */
+          justify-content: center; /* Centrar los elementos de menu */
+        }
+        nav ul li a{
+          text-decoration:none; /* Anula los estilos de subrayado */
+          color:inherit;        /* Le pone el color que deberia tener */
+          color:white;          /* Fuerzo el color a blanco */
+          background:indigo;    /* El fondo es de un color solido */
+          padding:5px;          /* Le pongo margen interior */
+          font-size:10px;       /* Le pongo tamaño de letra */
+          text-transform:uppercase;   /* Texto va en mayusculas */
+          display:block;        /* Permito a los elementos que sean bloques */
+          width:60px;           /* Su anchura es de 60 pixeles */
+          text-align:center;    /* Alineo el texto al centro */
+        }
+        #inicio img{
+          width:100%;           /* No quiero que la imagen se salga */
+        }
+     </style>
   </head>
   <body>
     <header>
       <!-- Esto es la cabecera de la página -->
-      <h1 style="color:red;">Jose Vicente Carratala</h1>
+      <h1>Jose Vicente Carratala</h1>
       <h2>Profesor, desarrollador y diseñador</h2>
       <nav>
         <ul>

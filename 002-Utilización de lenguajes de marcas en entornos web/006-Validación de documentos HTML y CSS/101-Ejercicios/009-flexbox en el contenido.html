@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <title>Daniel Calve Pardo</title>
+    <title>Jose Vicente Carratala</title>
     <meta charset="utf-8">
     <!-- Etiquetas de posicionamiento -->
     <meta name="description" content="Web de Jose Vicente Carratala, Formador, programador y diseñador">
@@ -14,12 +14,73 @@
      <meta property="og:image" content="josevicenteicono.jpg">
      <meta property="og:url" content="https://jocarsa.com">
      <meta property="og:type" content="website">
-     <link rel="stylesheet" href="005-estilo.css">
+     <style>
+        /* https://static.jocarsa.com/fuentes/ubuntu-font-family-0.83/Ubuntu-R.ttf */
+        /*
+          ttf = TrueTypeFont = Antiguo
+          otf = OpenTypeFont = Nuevo
+          woff = En desuso
+        */
+        @font-face {
+          font-family: "ubuntu";
+          src:url("Ubuntu-R.ttf");
+        }
+        h1,h2,h3{
+          color:indigo;
+        }
+        body{
+          background:GhostWhite;
+          font-family:ubuntu;
+        }
+        header,main,footer{
+          width:600px; /* Establece la anchura de los elementos */
+          background:white; /* Establece el fondo de los elementos */
+          margin:auto; /* Centralo en pantalla */
+          padding:20px; /* Pon un poco de margen interior */
+        }
+        nav ul{
+          list-style-type:none; /* Anula estilos de lista */
+          margin:0px; /* anula el margen exterior por defecto */
+          padding:0px; /* anula el margen interior por defecto */
+          display:flex; /* Activa flex de izquierda a derecha */
+          gap:1px; /* Distancia entre los elementos flexbox o grid */
+          justify-content: center; /* Centrar los elementos de menu */
+        }
+        nav ul li a{
+          text-decoration:none; /* Anula los estilos de subrayado */
+          color:inherit;        /* Le pone el color que deberia tener */
+          color:white;          /* Fuerzo el color a blanco */
+          background:indigo;    /* El fondo es de un color solido */
+          padding:5px;          /* Le pongo margen interior */
+          font-size:10px;       /* Le pongo tamaño de letra */
+          text-transform:uppercase;   /* Texto va en mayusculas */
+          display:block;        /* Permito a los elementos que sean bloques */
+          width:60px;           /* Su anchura es de 60 pixeles */
+          text-align:center;    /* Alineo el texto al centro */
+        }
+        #inicio img{
+          width:100%;           /* No quiero que la imagen se salga */
+        }
+        .bloque{
+          display:flex;         /* Texto e imagen quiero que sea flex */
+          gap:20px;             /* Distancia entre los elementos */
+        }
+        .bloque img{
+          flex:1;               /* Ocupa una unidad flex */
+          width:50%;            /* Ocupa el 50% de la anchura */
+          height:50%;           /* Ocupa el 50% de la altura */
+        }
+        .bloque p{
+          flex:1;               /* Ocupa una unidad flex */
+          font-size:10px;       /* Edito el tamaño del texto */
+          text-align:justify;   /* Edito la alineación del texto */
+        }
+     </style>
   </head>
   <body>
     <header>
       <!-- Esto es la cabecera de la página -->
-      <h1 style="color:red;">Jose Vicente Carratala</h1>
+      <h1>Jose Vicente Carratala</h1>
       <h2>Profesor, desarrollador y diseñador</h2>
       <nav>
         <ul>
@@ -47,41 +108,41 @@
        <section id="docencia">
         <h3>Docencia</h3>
         <div class="bloque">
-          <img src="josevicenteicono.jpg">
+          <img src="josevicenteicono.jpg" alt="Jose Vicente Carratala">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </section>
        <section id="desarrollo">
         <h3>Desarrollo</h3>
         <div class="bloque">
-          <img src="josevicenteicono.jpg">
+          <img src="josevicenteicono.jpg" alt="Jose Vicente Carratala">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </section>
        <section id="diseno">
         <h3>Diseño</h3>
         <div class="bloque">
-          <img src="josevicenteicono.jpg">
+          <img src="josevicenteicono.jpg" alt="Jose Vicente Carratala">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </section>
        <section id="portafolio">
         <h3>Portafolio</h3>
-        <div id="portafolio">
+        <div id="contenedorportafolio">
           <article>
              <h4>Elemento de portafolio</h4>
              <p>Descripción del elemento</p>
-             <img src="josevicenteicono.jpg">
+             <img src="josevicenteicono.jpg" alt="Jose Vicente Carratala">
           </article>
           <article>
              <h4>Elemento de portafolio</h4>
              <p>Descripción del elemento</p>
-             <img src="josevicenteicono.jpg">
+             <img src="josevicenteicono.jpg" alt="Jose Vicente Carratala">
           </article>
           <article>
              <h4>Elemento de portafolio</h4>
              <p>Descripción del elemento</p>
-             <img src="josevicenteicono.jpg">
+             <img src="josevicenteicono.jpg" alt="Jose Vicente Carratala">
           </article>
         </div>
       </section>
