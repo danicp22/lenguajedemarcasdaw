@@ -1,0 +1,162 @@
+- Este ejercicio consiste en la creación de una página web personal básica utilizando HTML5. El objetivo es estructurar correctamente el contenido mediante secciones, navegación interna, formularios y elementos multimedia, simulando un portafolio profesional.
+
+
+
+
+- Para construir esta página se utilizan los siguientes elementos clave de HTML:
+
+`<!DOCTYPE html>`: Define el tipo de documento como HTML5.
+`<nav>`: Contiene el menú de navegación con enlaces internos.
+`<section>`: Divide el contenido en bloques temáticos (Inicio, Sobre mí, Docencia, etc.).
+`<form>` y `<fieldset>`: Para recopilar información del usuario mediante un formulario estructurado.
+`<img>` y `<iframe>`: Para incluir imágenes y vídeos.
+`<footer>`: Contiene enlaces externos de interés.
+
+Además, se hace uso de atributos como `id`, `href`, `src`, `alt`, `required`, entre otros, para mejorar la accesibilidad, navegación y validación del contenido.
+
+
+
+
+
+
+- A continuacion se muestra un ejercicio en el que se añaden enlaces, se añade un formulario de contacto y se añaden videos y imagenes:
+
+```
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Personal</title>
+</head>
+<body>
+    <!-- ===============================
+         MENÚ DE NAVEGACIÓN PRINCIPAL
+         =============================== -->
+    <nav>
+        <!-- Enlaces internos que llevan a las distintas secciones de la página -->
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#docencia">Docencia</a></li>
+            <li><a href="#desarrollo">Desarrollo</a></li>
+            <li><a href="#diseno">Diseño</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===============================
+         SECCIÓN DE INICIO
+         =============================== -->
+    <section id="inicio">
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Este sitio muestra mi información personal, profesional y algunos recursos interesantes.</p>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN SOBRE MÍ
+         =============================== -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy un profesional interesado en el desarrollo web y el diseño digital. Aquí podrás conocer más sobre mi trabajo.</p>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN DOCENCIA
+         =============================== -->
+    <section id="docencia">
+        <h2>Docencia</h2>
+        <p>Experiencia docente en tecnologías web y herramientas digitales para la enseñanza.</p>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN DESARROLLO
+         =============================== -->
+    <section id="desarrollo">
+        <h2>Desarrollo</h2>
+        <p>Participo en proyectos de desarrollo web utilizando HTML, CSS y JavaScript.</p>
+
+        <!-- Imagen representativa del trabajo de desarrollo -->
+        <img src="foto.webp" alt="Imagen representando desarrollo web" width="500">
+
+        <!-- Video sobre el uso de lenguajes de marcas -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IrkJljILrzQ?si=U17fLO8fyKJfG_cH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN DISEÑO
+         =============================== -->
+    <section id="diseno">
+        <h2>Diseño</h2>
+        <p>Diseño de interfaces modernas y adaptativas, con enfoque en accesibilidad y usabilidad.</p>
+    </section>
+
+    <!-- ===============================
+         FORMULARIO DE CONTACTO
+         =============================== -->
+    <section id="contacto">
+        <h2>Formulario de contacto</h2>
+        <!-- Formulario principal -->
+        <form action="#" method="post">
+            <!-- Datos personales -->
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+            </fieldset>
+
+            <!-- Contacto de emergencia -->
+            <fieldset>
+                <legend>Contacto de emergencia</legend>
+
+                <label for="emerg-nombre">Nombre:</label><br>
+                <input type="text" id="emerg-nombre" name="emerg-nombre" required><br><br>
+
+                <label for="emerg-relacion">Relación:</label><br>
+                <input type="text" id="emerg-relacion" name="emerg-relacion" required><br><br>
+
+                <label for="emerg-telefono">Teléfono:</label><br>
+                <input type="tel" id="emerg-telefono" name="emerg-telefono" required><br><br>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- ===============================
+         ENLACES EXTERNOS DE INTERÉS
+         =============================== -->
+    <footer>
+        <h3>Enlaces de interés</h3>
+        <ul>
+            <!-- Recursos sobre lenguajes de marcas -->
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Aprende HTML y CSS</a></li>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+            <!-- Noticias deportivas -->
+            <li><a href="https://www.espn.com" target="_blank">ESPN - Noticias deportivas</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+```
+
+
+
+
+
+
+
+- Este ejemplo muestra cómo estructurar una página web personal completa con HTML5, incluyendo navegación interna, secciones temáticas, formularios y recursos multimedia. Es una base sólida para expandir con CSS y JavaScript en proyectos más avanzados.
+
+
