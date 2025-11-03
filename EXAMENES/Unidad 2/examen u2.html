@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Curriculum</title>
+    <style>
+
+
+      html {
+        background: #e6e6e6; 
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+        height: 100%;
+      }
+
+      body {
+        width: 900px;            
+        max-width: 95%;
+        background: white;
+        min-height: 100%;
+        margin: 24px auto;
+        display: flex;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        overflow: hidden;
+      }
+
+
+      #izquierda {
+        flex: 0 0 320px;              
+        background: rgb(216, 212, 212);
+        padding: 48px 15px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        font-size: 15px;
+      }
+      #izquierda img {
+        width: 100%;
+        max-width: 230px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 2px;
+        margin-left: 40px;
+      }
+
+
+      #derecha {
+        flex: 1;
+        padding: 56px 48px;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 15px;
+      }
+
+
+      h1 {
+        margin: 0 0 8px 0;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: 800;
+      }
+      h2 {
+        margin: 0 0 18px 0;
+        font-size: 18px;
+        color: #414040;
+        font-weight: 600;
+      }
+
+      h3 {
+        margin: 18px 0 10px 0;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      p { line-height: 1.6; margin: 0 0 14px 0; color: #333; }
+
+
+      #derecha article {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 14px;
+      }
+      #derecha article img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 4px;
+        flex: 0 0 50px;
+      }
+      #derecha article * { padding: 0; margin: 0; }
+
+
+      #izquierda ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      @media (max-width: 760px) {
+        body {
+          flex-direction: column;
+          width: 100%;
+          margin: 0;
+          box-shadow: none;
+        }
+        #izquierda { width: 100%; padding: 28px; align-items: center; text-align:center; }
+        #izquierda img { max-width: 260px; height: auto; }
+        #derecha { padding: 24px; }
+        h1 { font-size: 30px; letter-spacing: 2px; }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="izquierda">
+      <img src="fotocurriculum.jpg" alt="Fotografía de perfil" />
+      <article>
+        <h3>Sobre mí</h3>
+        <p>
+          Soy una persona muy activa, me gusta trabajar en equipo y ayudar en todo lo necesario.
+          Soy una persona movida, siempre me gusta estar haciendo cosas.
+        </p>
+      </article>
+
+      <article>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Tel: 1234 5678</li>
+          <li>Email: hola@sitioincreible.com</li>
+          <li>Calle Cualquiera 123, Ciudad</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="derecha">
+      <div class="titulo">
+          <h1>Daniel Calve Pardo</h1>
+          <h2>Estudiante</h2>
+      </div>
+      <div id="educacion">
+        <h3>Educación</h3>
+
+        <article>
+          <img
+            src="oller.webp"
+            alt="logo empresa"
+          />
+          <div class="texto">
+            <h4>Colegio Oller 2</h4>
+            <h5>2019-2023</h5>
+            <p>Educacion Secundaria Obligatoria</p>
+          </div>
+        </article>
+
+        <article>
+          <img
+            src="progresa.webp"
+            alt="logo empresa"
+          />
+          <div class="texto">
+            <h4>Centro FP Progresa</h4>
+            <h5>2023-2025</h5>
+            <p>Grado Medio SMR (Sistemas Microinformaticos y redes)</p>
+          </div>
+        </article>
+
+        <article>
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.r3t_XQCs72LaRxm00xJCUgAAAA?cb=12ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="logo empresa"
+          />
+          <div class="texto">
+            <h4>Ceac FP</h4>
+            <h5>Actualmente</h5>
+            <p>Cursando Grado Superior DAW (Desarrollo de Aplicaciones Web)</p>
+          </div>
+        </article>
+      </div>
+
+      <div id="experiencia">
+        <h3>Experiencia</h3>
+
+        <article>
+          <img
+            src="avanza.webp"
+            alt="logo centro"
+          />
+          <div class="texto">
+            <h4>Practicas Academicas</h4>
+            <h5>2025</h5>
+            <p>
+              380 de practicas academicas 
+          </div>
+        </article>
+      </div>
+
+      <div id="idiomas">
+        <h3>Idiomas</h3>
+
+          <div class="texto">
+            <h4>Castellano - Nativo</h4>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
+
