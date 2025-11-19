@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+</head>
+<body>
+    <header><h1>El blog de Dani</h1></header>
+    <main></main>
+    <footer>(c) 2025 Daniel Calve Pardo</footer>
+    <script>
+        const articulos = [
+            "Primer articulo","Segundo articulo","Tercer articulo"
+        ];
+        const contenedor = document.querySelector("main");
+        for(let i = 0;i<articulos.length;i++){     // Recorro los articulos
+            contenedor.innerHTML += "<h3>"+articulos[i]+"</h3>";
+        }
+    </script>
+    
+</body>
+</html>
