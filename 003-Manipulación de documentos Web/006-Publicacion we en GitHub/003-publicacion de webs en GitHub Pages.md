@@ -32,7 +32,6 @@ Cómo publicar una web en GitHub Pages:
 ...
 18.-Entro en el repositorio via url
 https://[usuario].github.io/[repo]
-https://jocarsa.github.io/curriculum25/[loquesea.html]
 
 ...
 
