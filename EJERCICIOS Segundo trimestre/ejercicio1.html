@@ -1,0 +1,31 @@
+<script>
+/* Programa para practicar conceptos de fechas y funciones con retorno
+v0.1 Daniel Calve Pardo 2026
+Este programa muestra conceptos de fechas y funciones con retorno
+*/
+
+
+// Fechas
+function saludarConFecha(nombre) {
+    let hoy = new Date();
+    return "Hola, " + nombre + ". Hoy es " + hoy.toLocaleDateString() + ".";
+}
+
+
+// Funciones con retorno
+function presentacion(nombre, edad) {
+    return "Hola, mi nombre es " + nombre + " y tengo " + edad + " años.";
+}
+
+
+// Ejemplo
+function informacionCompleta(nombre, edad, ciudad) {
+    return "Hola, mi nombre es " + nombre + ", tengo " + edad + " años y vivo en " + ciudad + ".";
+}
+
+console.log(saludarConFecha("Dani"));
+console.log(presentacion("Dani",18));
+console.log(informacionCompleta("Dani",18,"Valencia"));
+
+
+</script>
